@@ -1,19 +1,60 @@
-# Mama G Digital Menu
+<div align="center">
 
-Mama G Digital Menu is a beginner-friendly restaurant website built with plain HTML, CSS, and JavaScript. It shows a restaurant landing page, an about page, a menu page with filters and search, an events page, and detailed menu item pages.
+# Mama G
 
-## Technologies used
+### Authentic Taste. Made With Love.
 
-- HTML5 for page structure
-- CSS3 for styling and responsive layout
-- Vanilla JavaScript for navigation, search, filtering, and animation
-- Font Awesome for icons
-- Google Fonts for the Inter typeface
+**A warm, responsive digital menu for a fictional Nigerian restaurant in Makurdi, Benue State.**
+
+[Explore the Menu](menu.html) · [Our Story](about.html) · [Events](events.html)
+
+![HTML5](https://img.shields.io/badge/HTML5-semantic-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-responsive-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=222)
+![No backend](https://img.shields.io/badge/backend-none-lightgrey)
+
+</div>
+
+---
+
+## About the project
+
+Mama G is a frontend-only restaurant website made with plain HTML, CSS, and JavaScript. It introduces the restaurant, shares its story and events, and lets visitors browse, search, and filter a Nigerian-inspired menu.
+
+> **School project demo:** Mama G and its restaurant story are fictional. Online ordering, payment, and reservations are not connected.
+
+## Pages
+
+| Page | What you'll find |
+| --- | --- |
+| [Home](index.html) | Welcome section, popular dishes, restaurant introduction, and highlights |
+| [About](about.html) | Fictional restaurant story, philosophy, kitchen, and values |
+| [Menu](menu.html) | Twelve dishes with live search and category filters |
+| [Events](events.html) | Family dinners, weekend specials, celebrations, and event enquiries |
+| [Dish details](menu/) | Individual pages with descriptions, ingredients, portions, and prices |
+
+## Features
+
+- Responsive layouts for desktop, tablet, and mobile
+- Mobile navigation with keyboard-friendly controls
+- Client-side menu search and category filtering
+- Individual dish pages with related meal links
+- Search overlay, scroll effects, and subtle reveal animations
+- Reduced-motion support for visitors who prefer less animation
+- Naira prices and Nigerian restaurant content
+
+## Built with
+
+- **HTML5** for semantic page structure
+- **CSS3** for styling, layout, and responsive design
+- **Vanilla JavaScript** for navigation, filtering, search, and interactions
+- **Inter** via Google Fonts and **Font Awesome** via CDN
+- Food photography served from Unsplash; replace the image URLs with local files when ready
 
 ## Project structure
 
 ```text
-mama-g/
+.
 ├── index.html
 ├── about.html
 ├── menu.html
@@ -39,86 +80,66 @@ mama-g/
 │   ├── main.js
 │   ├── menu.js
 │   └── search.js
-├── README.md
 └── images/
 ```
 
-## How HTML links to CSS
+## Run locally
 
-Each HTML file links to CSS files in the `<head>` section using a normal `<link rel="stylesheet" href="...">` tag. Example:
+No build step or package installation is needed. From the project folder, start a local server:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit **http://localhost:8000**. You can also open `index.html` directly in a browser; using a local server is recommended.
+
+## Learn and customize
+
+### How the files work together
+
+Each page links to the shared stylesheets in its `<head>`:
 
 ```html
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 ```
 
-This is how the browser loads the styling for the page.
-
-## How HTML links to JavaScript
-
-JavaScript files are linked in the HTML with the `<script src="..." defer></script>` pattern. Example:
+Pages load JavaScript with a deferred script reference:
 
 ```html
 <script src="js/main.js" defer></script>
 ```
 
-The `defer` attribute helps the script load after the HTML is parsed, which is good for most page interactivity.
+Detail pages live one folder deeper, so their paths start with `../`, for example `../css/style.css`.
 
-## How to add a new menu item
+### Add a menu item
 
-1. Pick a food image and save it in the `images/` folder or use a remote image URL.
-2. Add a new card to `menu.html` in the same card format as the other items.
-3. Copy the card structure and add your food name, description, category, and price.
-4. Create a matching detail page in the `menu/` folder.
-5. Update the links so the new card points to its new page.
+1. Add a card to `menu.html`, following an existing card's structure.
+2. Set its `data-category`, `data-name`, and `data-description` values so search and filters can find it.
+3. Add a descriptive image `alt` attribute, price, and detail-page link.
+4. Create the linked page in `menu/` using an existing dish detail page as a guide.
+5. Add the new detail page to the menu list above.
 
-## How to change menu prices
+### Change a price or image
 
-Open `menu.html` and find the `₦` price text in the food card. Change the number in that card. If the item has a detail page, update the price there too.
+- **Price:** Update the price on the menu card and on the matching detail page.
+- **Image:** Replace the `src` URL in the HTML. To use a local image, place it in `images/` and use a path such as `images/jollof-rice.jpg`. Include a useful `alt` description.
 
-## How to replace images
+## Project boundaries
 
-Either:
+This is a static frontend demonstration. The “Order Now” links return visitors to the menu; there is no order submission, backend, database, payment, or booking service. Contact and social details are sample project content and should be updated before real-world use.
 
-- replace the current URL in the HTML with a new image URL, or
-- save the new image inside the `images/` folder and update the `src` attribute.
+## Ideas for future work
 
-Example:
+- Add a real enquiry or reservation form
+- Connect order requests to a backend
+- Replace sample contact details and add verified restaurant photography
+- Add customer reviews and a photo gallery
 
-```html
-<img src="images/your-new-food.jpg" alt="Description of the food" loading="lazy">
-```
+---
 
-## How to run the project locally
+<div align="center">
 
-Because this is a frontend-only website, you can run it with a simple local web server.
+Made as a learning project to explore how HTML, CSS, and JavaScript work together.
 
-### Option 1: Use Python
-
-```bash
-cd your-folder
-python -m http.server 8000
-```
-
-Then open:
-
-```text
-http://localhost:8000
-```
-
-### Option 2: Open the HTML files directly
-
-You can also open `index.html` in the browser, but a local server is better because it behaves more like a real website.
-
-## Future improvements
-
-- Add a real online ordering form
-- Connect the menu to a backend database
-- Add a payment system
-- Add reservation booking
-- Create a photo gallery
-- Add customer reviews and ratings
-
-## Note for students
-
-This project is a simple front-end MVP. It is designed to help you understand how HTML gives structure, CSS gives style, and JavaScript adds interactivity. The goal is to keep the code clean, readable, and easy to learn.
+</div>
