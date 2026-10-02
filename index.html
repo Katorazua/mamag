@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mama G serves authentic Nigerian cuisine with flavorful dishes, warm hospitality, and memorable dining experiences.">
+    <title>Mama G | Authentic Nigerian Flavors</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238B1E1E'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='30' fill='white' font-family='Arial'%3EMG%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/search.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-inner">
+            <a href="index.html" class="brand" aria-label="Mama G home page">
+                <span class="brand-mark">MG</span>
+                <span class="brand-text">Mama<span style="color: var(--primary-color);">G</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-button search-trigger" type="button" aria-label="Open search" data-search-trigger>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a class="btn btn-primary" href="menu.html">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">Welcome to Mama G</span>
+                    <h1>Authentic Nigerian Flavors, Made With Love.</h1>
+                    <p>From comforting classics to delicious family favorites, Mama G brings the taste of home to every plate.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="menu.html">Explore Our Menu</a>
+                        <a class="btn btn-secondary" href="#about-preview">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-card">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Traditional Nigerian food served on a table" loading="eager">
+                    </div>
+                    <div class="floating-badge badge-top">
+                        <span class="badge-icon"><i class="fa-solid fa-star"></i></span>
+                        <span>4.9 Customer Love</span>
+                    </div>
+                    <div class="floating-badge badge-bottom">
+                        <span class="badge-icon"><i class="fa-solid fa-clock"></i></span>
+                        <span>Fresh Daily</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="favorites-title">
+            <div class="section-header reveal">
+                <span class="eyebrow">Our favorites</span>
+                <h2 id="favorites-title">Today's Favorites</h2>
+                <p>Discover some of Mama G's most loved dishes.</p>
+            </div>
+
+            <div class="container menu-grid">
+                <article class="menu-card reveal">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80" alt="Plate of Nigerian jollof rice" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <span class="food-category">Rice</span>
+                            <span class="price-tag">₦3,500</span>
+                        </div>
+                        <h3>Jollof Rice</h3>
+                        <p>Fragrant Nigerian jollof rice cooked in a rich tomato and pepper sauce.</p>
+                        <a href="menu/jollof-rice.html" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="menu-card reveal">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Colorful fried rice with vegetables" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <span class="food-category">Rice</span>
+                            <span class="price-tag">₦4,000</span>
+                        </div>
+                        <h3>Fried Rice</h3>
+                        <p>Colorful fried rice prepared with fresh vegetables and aromatic spices.</p>
+                        <a href="menu/fried-rice.html" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="menu-card reveal">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Pounded yam and egusi soup meal" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <span class="food-category">Swallow</span>
+                            <span class="price-tag">₦5,500</span>
+                        </div>
+                        <h3>Pounded Yam &amp; Egusi</h3>
+                        <p>Soft pounded yam served with rich traditional egusi soup.</p>
+                        <a href="menu/pounded-yam.html" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="menu-card reveal">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Spicy Nigerian pepper soup in a bowl" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-top">
+                            <span class="food-category">Soups</span>
+                            <span class="price-tag">₦3,000</span>
+                        </div>
+                        <h3>Pepper Soup</h3>
+                        <p>A warming bowl of spicy Nigerian pepper soup.</p>
+                        <a href="menu/pepper-soup.html" class="card-link">View Details <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="about-preview" aria-labelledby="about-preview-title">
+            <div class="container story-grid">
+                <div class="story-panel reveal">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80" alt="Warm restaurant interior with diners and meals" loading="lazy">
+                </div>
+
+                <div class="story-copy reveal">
+                    <span class="eyebrow">Our story</span>
+                    <h2 id="about-preview-title">More Than Food. It's Home.</h2>
+                    <p>At Mama G, we believe every meal should carry the warmth of family, tradition, and welcome. What began as a simple kitchen tradition grew into a beloved restaurant serving authentic Nigerian dishes with love.</p>
+                    <p>We prepare each recipe with fresh ingredients, a careful touch, and hospitality that makes you feel at home from the first bite.</p>
+                    <a class="btn btn-primary" href="about.html">Read Our Story</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="why-title">
+            <div class="section-header reveal">
+                <span class="eyebrow">Why choose us</span>
+                <h2 id="why-title">Why Choose Mama G</h2>
+            </div>
+
+            <div class="container feature-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We cook with quality produce, meats, and spices to bring out the real taste of Nigerian cuisine.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h3>Authentic Recipes</h3>
+                    <p>Each recipe is inspired by tradition and prepared to keep the familiar home-cooked flavour.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                    <h3>Made With Love</h3>
+                    <p>Our kitchen is built on care, community, and the joy of sharing food that brings people together.</p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Fast Service</h3>
+                    <p>From busy lunches to family dinners, we keep our service warm, smooth, and dependable.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <span class="eyebrow" style="background: rgba(255,255,255,0.15); color: #fff;">Come hungry</span>
+                    <h2 id="cta-title">Ready for a Taste of Home?</h2>
+                    <p>Explore our menu and discover your next favorite meal.</p>
+                    <a class="btn btn-secondary" href="menu.html">Explore Menu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <span class="brand-mark">MG</span>
+                    <span>MamaG</span>
+                </div>
+                <p>Authentic Taste. Made With Love.</p>
+                <div class="social-links" aria-label="Social media links">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-phone"></i> +234 800 000 0000</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@mamagrestaurant.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Makurdi, Benue State, Nigeria</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Opening Hours</h3>
+                <ul class="footer-hours">
+                    <li>Monday – Sunday</li>
+                    <li>10:00 AM – 10:00 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            © 2026 Mama G Restaurant. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="search-overlay" aria-hidden="true">
+        <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-title">
+            <div class="search-header">
+                <h3 id="search-title">Search meals</h3>
+                <button class="icon-button" type="button" data-close-search aria-label="Close search">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="search-field">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" id="search-input" placeholder="Search for jollof rice, pepper soup, or drinks..." aria-label="Search meals">
+            </div>
+            <p class="search-meta">Tip: search for “rice”, “soup”, or “drink” to filter menu options.</p>
+        </div>
+    </div>
+</body>
+</html>
+
